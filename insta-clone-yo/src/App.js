@@ -10,9 +10,17 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      dummyArrayDat: dummyData
+      dummyArrayDat: []
     }
   }
+
+  componentDidMount() {
+    this.setState({
+      dummyArrayDat: dummyData
+    })
+    console.log(this.state.dummyArrayDat)
+  }
+
   render() {
     return (
       <div className="App">

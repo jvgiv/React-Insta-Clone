@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #e6e6e6;
 }
 
 .App-logo {
@@ -30,4 +33,117 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Search Bar */
+
+.search-bar {
+  display: flex;
+  margin: 0 auto;
+  width: 600px;
+  height: 75px;
+  border: 1px solid blue;
+  justify-content: center;
+
+}
+
+.instagram-logo-section {
+  /* display: flex; */
+  border: 1px solid red;
+  
+  flex-direction: row;
+  /* text-align: center; */
+  justify-content: flex-start;
+  /* align-content: center; */
+
+}
+
+.instagram-logo-section-text {
+border: 1px solid blue;
+display:flex;
+}
+
+
+.search-input {
+/* align-content: center; */
+  display:flex;
+}
+
+.right-side-searchbar {
+  font-size: 25px;
+  padding-right: 20px;
+  width: 100px;
+  justify-content: flex-end;
+  border: 1px solid brown;
+  display:flex;
+}
+
+
+
+
+
+
+
+/* thumbnail  */
+.tnail {
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.tnail--pic {
+  border-radius: 50%;
+  /* width: 5.5%; */
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.tnail--username {
+  align-items: center;
+  padding-left: 10px;
+}
+
+
+/* Post */
+.post-pic-picture {
+  width: 600px;
+  display: flex;
+}
+
+.likes {
+  /* border: 1px solid blue; */
+  margin: 0 10px;
+}
+
+.like-logos {
+  font-size: 25px;
+  margin-left: 10px;
+  height: 40px;
+}
+
+.like-logo-second {
+  padding-left: 20px;
+}
+
+.comment-add {
+  width: 580px;
+  align-content: center;
+  border-top: 1px solid #e6e6e6;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+
+/*  comment section  */
+.comments {
+  /* border: 1px solid red; */
+  margin: 0 10px;
+  line-height: .8;
 }
