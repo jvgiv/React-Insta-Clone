@@ -11,7 +11,7 @@ class SearchBar extends Component {
             <div className="search-bar">
                 <div className="instagram-logo-section">
                     
-                    <p className="instagram-logo-section-text"><i class="fab fa-instagram"></i>| Instagram</p>
+                    <p className="instagram-logo-section-text"><i className="fab fa-instagram"></i>| Instagram</p>
                 </div>
                 <div className="search-input">
                     <input

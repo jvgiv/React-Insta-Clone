@@ -1,33 +1,29 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import dummyData from './dummy-data';
-import SearchBar from './SearchBar';
-import Post from './Post';
-import CommentSection from './CommentSection';
+import PostsPage from './PostsPage'
+import withAuthenticate from './Authentication/withAuthenticate';
+
+
+const ComponentFromWithAuthenticate = withAuthenticate(PostsPage);
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      dummyArrayDat: []
-    }
-  }
+  state = {
+    loggedIn: true
+  };
 
-  componentDidMount() {
-    this.setState({
-      dummyArrayDat: dummyData
-    })
-    console.log(this.state.dummyArrayDat)
-  }
+  // toggleComponents = () => {
+  //   if(!this.state.loggedIn) {
+  //     localStorage.setItem('loggedIn', true)
+  //   } else {
+  //     localStorage.removeItem('loggedIn')
+  //   }
+  //   this.setState({ loggedIn: !this.state.loggedIn })
+  // }
 
   render() {
     return (
-      <div className="App">
-        <SearchBar />
-        <Post dummyArrayDat={this.state.dummyArrayDat}/>
-        
-      </div>
+      <ComponentFromWithAuthenticate />
     );
   }
 }

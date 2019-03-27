@@ -33,7 +33,7 @@ class CommentSection extends React.Component {
             text: createdVariable
         }
 
-        console.log(newComment)
+        // console.log(newComment)
         // 1. take commentText 
         // 2. make new object with comment text, id, username
         // 3. update state with new object for commentText
