@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
 import PostsPage from './PostsPage'
 import withAuthenticate from './Authentication/withAuthenticate';
@@ -8,9 +8,9 @@ import withAuthenticate from './Authentication/withAuthenticate';
 const ComponentFromWithAuthenticate = withAuthenticate(PostsPage);
 
 class App extends React.Component {
-  state = {
-    loggedIn: true
-  };
+  // state = {
+  //   loggedIn: true
+  // };
 
   // toggleComponents = () => {
   //   if(!this.state.loggedIn) {
