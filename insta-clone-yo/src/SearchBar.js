@@ -10,17 +10,17 @@ class SearchBar extends Component {
         return (
             <div className="search-bar">
                 <div className="instagram-logo-section">
-                    <i class="fab fa-instagram"></i>
-                    <p className="instagram-logo-section-text">Instagram</p>
+                    
+                    <p className="instagram-logo-section-text"><i class="fab fa-instagram"></i>| Instagram</p>
                 </div>
                 <div className="search-input">
                     <input
                         placeholder="Search" />
                 </div>
                 <div className="right-side-searchbar">
-                    <i class="far fa-compass"></i>
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-user"></i>
+                    <i className="far fa-compass"></i>
+                    <i className="far fa-heart"></i>
+                    <i className="far fa-user"></i>
                 </div>
             </div>
         )

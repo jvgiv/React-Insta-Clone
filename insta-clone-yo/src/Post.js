@@ -6,6 +6,8 @@ import PropTypes, { string } from "prop-types";
 import CommentSection from './CommentSection';
 
 function Post(props) {
+
+    
     return (
         <>
             {props.dummyArrayDat.map(picSection => (

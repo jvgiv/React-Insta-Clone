@@ -41,16 +41,16 @@
   display: flex;
   margin: 0 auto;
   width: 600px;
-  height: 75px;
+  height: 40px;
   border: 1px solid blue;
   justify-content: center;
-
+  vertical-align: center;
 }
 
 .instagram-logo-section {
-  /* display: flex; */
+  display: flex;
   border: 1px solid red;
-  
+  justify-content: flex-start;
   flex-direction: row;
   /* text-align: center; */
   justify-content: flex-start;
@@ -61,12 +61,17 @@
 .instagram-logo-section-text {
 border: 1px solid blue;
 display:flex;
+flex-direction: row;
+/* width: 250px; */
+justify-content: flex-start;
+font-size: 25px;
 }
 
 
 .search-input {
 /* align-content: center; */
   display:flex;
+
 }
 
 .right-side-searchbar {
@@ -76,6 +81,8 @@ display:flex;
   justify-content: flex-end;
   border: 1px solid brown;
   display:flex;
+  align-items: center;
+  margin-left: 
 }
 
 
@@ -129,6 +136,7 @@ display:flex;
 
 .comment-add {
   width: 580px;
+  height: auto;
   align-content: center;
   border-top: 1px solid #e6e6e6;
   border-right: 0;
@@ -145,5 +153,5 @@ display:flex;
 .comments {
   /* border: 1px solid red; */
   margin: 0 10px;
-  line-height: .8;
+  line-height: 1.25;
 }
