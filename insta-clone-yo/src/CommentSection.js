@@ -3,8 +3,23 @@ import logo from './logo.svg';
 import './App.css';
 import PropTypes, { string } from "prop-types";
 import dummyData from './dummy-data'
+import styled, { css } from "styled-components";
 
-
+const CommentsContainer = styled.div`
+    margin: 0 10px;
+    line-height: 1.25;
+`
+const CommentAdd = styled.input`
+    width: 580px;
+    height: auto;
+    align-content: center;
+    border-top: 1px solid #e6e6e6;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    margin-left: 10px;
+    margin-bottom: 15px;
+`
 
 class CommentSection extends React.Component {
     constructor(props) {
@@ -51,15 +66,15 @@ render() {
         <>
             {/* <p><strong>{eachComment.likes} likes</strong></p> */}
             {this.state.comments.map(eachComment => (
-                <div key={eachComment.id} className="comments">
+                <CommentsContainer key={eachComment.id} className="comments">
                     
                    <p><strong>{eachComment.username}</strong> {eachComment.text}</p>
                    
-                </div>
+                </CommentsContainer>
             ))}
             <p>{this.props.timestamp}</p>
             <form onSubmit={this.submitComment}>
-                <input 
+                <CommentAdd 
                     className="comment-add"
                     placeholder="Add a comment..."
                     value={this.state.commentText}

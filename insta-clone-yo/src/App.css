@@ -38,53 +38,25 @@
 /* Search Bar */
 
 .search-bar {
-  display: flex;
-  margin: 0 auto;
-  width: 600px;
-  height: 25px;
-  /* border: 1px solid blue; */
-  justify-content: space-between;
-  vertical-align: center;
-  flex-direction: row;
+  
 }
 
 .instagram-logo-section {
-  display: flex;
-  /* border: 1px solid red; */
-  /* justify-content: flex-start; */
-  flex-direction: row;
-  /* text-align: center; */
-  /* justify-content: flex-start; */
-  /* align-content: center; */
+  
 
 }
 
 .instagram-logo-section-text {
-/* border: 1px solid blue; */
-/* display:flex; */
-margin-top: 2px;
-margin-left: 5px;
-width: auto;
-height: 100%;
-font-size: 15px;
+
 }
 
 
 .search-input {
-/* align-content: center; */
-  display:flex;
 
 }
 
 .right-side-searchbar {
-  font-size: 25px;
-  padding-right: 20px;
-  width: 100px;
-  justify-content: flex-end;
-  /* border: 1px solid brown; */
-  display:flex;
-  align-items: center;
-  justify-content: space-evenly;
+  
 }
 
 
@@ -95,23 +67,15 @@ font-size: 15px;
 
 /* thumbnail  */
 .tnail {
-  border-top: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  width: auto;
+  
 }
 
 .tnail--pic {
-  border-radius: 50%;
-  /* width: 5.5%; */
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
+  
 }
 
 .tnail--username {
-  align-items: center;
-  padding-left: 10px;
+
 }
 
 
@@ -121,8 +85,7 @@ font-size: 15px;
 }
 
 .post-pic-picture {
-  width: 600px;
-  display: flex;
+ 
 }
 
 .likes {
@@ -141,15 +104,7 @@ font-size: 15px;
 }
 
 .comment-add {
-  width: 580px;
-  height: auto;
-  align-content: center;
-  border-top: 1px solid #e6e6e6;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 0;
-  margin-left: 10px;
-  margin-bottom: 15px;
+ 
 }
 
 
@@ -157,7 +112,5 @@ font-size: 15px;
 
 /*  comment section  */
 .comments {
-  /* border: 1px solid red; */
-  margin: 0 10px;
-  line-height: 1.25;
+  
 }
