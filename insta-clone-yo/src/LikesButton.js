@@ -3,7 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import PropTypes, { string } from "prop-types";
 import dummyData from './dummy-data'
+import styled, { css } from "styled-components";
 
+const LikeLogos = styled.div`
+    font-size: 25px;
+    margin-left: 10px;
+    height: 40px;
+`
+const Likes = styled.p`
+    
+    font-size: 17px;
+`
 
 class LikesButton extends React.Component {
     constructor(props) {
@@ -57,11 +67,11 @@ class LikesButton extends React.Component {
             <>
            
                 
-                    <div className="like-logos">
+                    <LikeLogos className="like-logos">
                         <i class="far fa-heart"></i>
                         <i class="far fa-comment like-logo-second"></i>
-                        <p className="likes"><strong>{this.state.likesTotal.likes} likes</strong></p>
-                    </div>
+                        <Likes className="likes"><strong>{this.state.likesTotal.likes} likes</strong></Likes>
+                    </LikeLogos>
                 
             
         </>
